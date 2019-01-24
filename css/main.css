@@ -5,4 +5,5 @@ body {
     height: 100px;
     background: #eee; }
     body .class1:hover {
-      background: blue; }
+      background: blue;
+      color: red; }
