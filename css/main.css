@@ -1,0 +1,8 @@
+body {
+  background: red; }
+  body .class1 {
+    width: 100px;
+    height: 100px;
+    background: #eee; }
+    body .class1:hover {
+      background: blue; }
