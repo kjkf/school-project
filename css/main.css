@@ -1,9 +1,51 @@
-body {
-  background: red; }
-  body .class1 {
-    width: 100px;
-    height: 100px;
-    background: #eee; }
-    body .class1:hover {
-      background: blue;
-      color: red; }
+.wrap-main {
+  background: url("../img/texture-bg.png");
+  width: 1100px;
+  height: 650px;
+  padding-top: 11px; }
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 950px;
+  color: #ffffff;
+  font: 13px/30px Ubuntu-Medium; }
+  .header-wrap .header:first-child {
+    margin-right: auto; }
+
+.logo {
+  background: url("../icons/logo.svg") no-repeat -2px;
+  width: 102px;
+  height: 75px; }
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 680px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .menu ul li {
+    margin-right: 25px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+  .menu ul li:first-child {
+    list-style: none; }
+
+.order button {
+  width: 100px;
+  height: 35px;
+  background: #e45028;
+  border-radius: 5px;
+  border-style: none;
+  color: #ffffff;
+  font: 13px/30px Ubuntu-Medium; }

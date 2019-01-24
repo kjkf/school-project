@@ -1,13 +1,57 @@
-body {
-	background: red;
-	.class1 {
-		width: 100px;
-		height: 100px;
-		background: #eee;
+.wrap-main {
+	background: url('../img/texture-bg.png');
+	width: 1100px;
+	height: 650px;
+	padding-top: 11px;
+}
 
-		&:hover {
-			background: blue;
-			color: red;
-		}
+.header-wrap{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0 auto;
+	width: 950px;
+	//border: 1px solid red;
+	color: #ffffff;
+	font: 13px/30px Ubuntu-Medium;
+
+	& .header:first-child {
+		margin-right: auto;
 	}
+}
+
+.logo {
+	background: url('../icons/logo.svg') no-repeat -2px;
+	width: 102px;
+	height: 75px;
+}
+
+.menu ul {
+	display: flex;
+	width: 680px;
+	justify-content: space-around;
+	//border: 1px solid green;
+
+	& li {
+		margin-right: 25px;
+		//border: 2px solid blue;
+		align-self:center;
+	}
+
+	& li:first-child {
+		list-style: none;
+	}
+}
+
+
+
+.order button {
+	width: 100px;
+	height: 35px;
+	background: #e45028;
+	border-radius: 5px;
+	border-style: none;
+	color: #ffffff;
+	font: 13px/30px Ubuntu-Medium;
+	//border: 1px solid lightblue;
 }

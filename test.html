@@ -3,13 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		.menu ul {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  width: 680px;
+		  -ms-flex-pack: distribute;
+		  justify-content: space-around;
+		  border: 1px solid green; 
+		}
+		.menu ul li {
+			font: 13px/30px Ubuntu-Medium; 
+		    margin-right: 25px;
+		    border: 1px solid blue;
+		    -ms-flex-item-align: center;
+		    -ms-grid-row-align: center;
+		    align-self: center; 
+		    height: 75px;
+		}
+		.menu ul li:first-child {
+		    list-style: none; 
+		}
+	</style>
 </head>
 <body>
-	<div class="wrap">
+	<div class="header menu">
 		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
+			<li>О НАС</li>
+			<li>БУРГЕРЫ</li>
+			<li>КОМАНДА</li>
+			<li>МЕНЮ</li>
+			<li>ОТЗЫВЫ</li>
+			<li>КАК МЫ РАБОТАЕМ</li>
+			<li>КОНТАКТЫ</li>
 		</ul>
 	</div>
 </body>
