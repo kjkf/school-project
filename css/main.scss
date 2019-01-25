@@ -18,9 +18,17 @@ body {
 }
 
 .wrap-main {
-	background: url('../img/texture-bg.jpg');
+	
 	width: 1100px;
 	height: 650px;
+
+	&.first-screen {
+		background: url('../img/texture-bg.jpg');
+	}
+
+	&.second-screen {
+		background: url('../img/second-bg.jpg') no-repeat;
+	}
 }
 
 .header-wrap{
@@ -127,3 +135,58 @@ body {
 
 }
 
+/*****************************************************************************************/
+
+.header-text {
+	width: 385px;
+	height: 60px;
+	padding: 127px 0 0 356px;
+	font-size: 71.713px;
+	font-family: "Gagalin";
+	color: rgb(47, 50, 52);
+	line-height: 0.889;
+	text-align: center;
+}
+
+.row-wrap {
+	width: 940px;
+	height: 280px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block {
+	width: 300px;
+	height: 280px;
+}
+
+.img-wrap {
+	width: 100%;
+	height: 90px;
+	margin-top: 15px;
+}
+
+@each $item in (meat, hand, natural) {
+	.img-wrap.#{$item} {
+		background: url(../icons/#{$item}.svg) no-repeat 50% 0;
+	}
+}
+
+.block-header {
+	font-size: 24px;
+	font-family: "Lifehack Medium";
+	color: rgb(47, 50, 52);
+	line-height: 1.167;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.block-text {
+	font-size: 14px;
+	font-family: "Ubuntu";
+	color: rgba(47, 50, 52, 0.8);
+	line-height: 1.714;
+	text-align: center;
+	margin-top: 16px;
+}
