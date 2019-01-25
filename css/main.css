@@ -175,3 +175,90 @@ body {
   line-height: 1.714;
   text-align: center;
   margin-top: 16px; }
+
+/*********************************************************/
+.photos-wrap {
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+.photo {
+  width: 275px;
+  height: 325px; }
+
+.photo1 {
+  background: url(../img/photos/photo-1.jpg) no-repeat; }
+  .photo1:hover .hidden {
+    display: block; }
+
+.photo2 {
+  background: url(../img/photos/photo-2.jpg) no-repeat; }
+  .photo2:hover .hidden {
+    display: block; }
+
+.photo3 {
+  background: url(../img/photos/photo-3.jpg) no-repeat; }
+  .photo3:hover .hidden {
+    display: block; }
+
+.photo4 {
+  background: url(../img/photos/photo-4.jpg) no-repeat; }
+  .photo4:hover .hidden {
+    display: block; }
+
+.photo5 {
+  background: url(../img/photos/photo-5.jpg) no-repeat; }
+  .photo5:hover .hidden {
+    display: block; }
+
+.photo6 {
+  background: url(../img/photos/photo-6.jpg) no-repeat; }
+  .photo6:hover .hidden {
+    display: block; }
+
+.photo7 {
+  background: url(../img/photos/photo-7.jpg) no-repeat; }
+  .photo7:hover .hidden {
+    display: block; }
+
+.photo8 {
+  background: url(../img/photos/photo-8.jpg) no-repeat; }
+  .photo8:hover .hidden {
+    display: block; }
+
+.client_fio {
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: #fff;
+  line-height: 2;
+  text-align: left;
+  margin: 40px 0 0 20px; }
+
+.review-text {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: #fff;
+  line-height: 1.714;
+  margin: 15px 0 0 20px; }
+
+button.more {
+  border-style: none;
+  background: #2f3234;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  line-height: 2.308;
+  width: 111px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 17px 0 0 19px; }
+
+.hidden {
+  display: none; }

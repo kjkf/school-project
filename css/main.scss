@@ -190,3 +190,62 @@ body {
 	text-align: center;
 	margin-top: 16px;
 }
+
+/*********************************************************/
+
+.photos-wrap {
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.photo {
+	width: 275px;
+	height: 325px;
+}
+
+@for $i from 1 through 8 {
+	.photo#{$i} {
+		background: url(../img/photos/photo-#{$i}.jpg) no-repeat;
+
+		&:hover .hidden {
+			display: block;
+		}
+	}
+}
+
+.client_fio {
+  font-size: 14px;
+  font-family: "Gagalin";
+  color: #fff;
+  line-height: 2;
+  text-align: left;  
+  margin: 40px 0 0 20px; 
+}
+
+.review-text {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: #fff;
+  line-height: 1.714;
+  margin: 15px 0 0 20px; 
+}
+
+button.more {
+	border-style: none;
+	background: #2f3234;
+	color: #fff;
+	font-size: 13px;
+	font-family: "Ubuntu";
+	text-transform: uppercase;
+	line-height: 2.308;
+	width: 111px;
+	height: 35px;
+	border-radius: 5px;
+	margin: 17px 0 0 19px;
+}
+
+.hidden {
+	display: none;
+}
