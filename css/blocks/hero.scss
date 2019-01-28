@@ -1,0 +1,54 @@
+.hero {
+	background: url('../img/main-bg.jpg') center center / cover no-repeat;
+}
+
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: .75;
+}
+
+.hero__order-btn {
+	margin-left: 15px;
+}
+
+.hero__header {
+	margin-top: 10px;
+}
+
+.hero__content {
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+}
+
+.hero_content-img {
+	margin-left: 18px;
+}
+
+
+.hero__content-desc {
+	font-size: 3.85rem;
+	line-height: 1;
+	color: #fff;
+	font-family: 'Lifehack-Medium';
+}
+
+.hero__content-text {
+	margin-top: 59px;
+    margin-left: 10px;
+}
+
+.arrow-down {
+	display: block;
+	width: 29px;
+	height: 15px;
+	background: url(../img/icons/arrow-scroll.svg) no-repeat;
+}
+
+.hero__arrow-down {
+	position: absolute;
+	left: 49%;
+	bottom: 22px;
+}

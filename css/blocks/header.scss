@@ -1,0 +1,47 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+
+	@include ubuntu(medium);
+	font-size: 0.8125rem;
+
+}
+
+.header__buttons {
+	display: flex;
+	align-items: center;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+}
+
+.menu__item {
+	display: flex;
+	align-items: center;
+
+	&:last-child {
+		&:after {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: "";
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		display: inline-block;
+		background: #fff;
+		margin: 0 15px;
+	}
+}
+
+.menu__link {
+	color: #fff;
+	text-decoration: none;
+
+}

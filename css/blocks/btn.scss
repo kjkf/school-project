@@ -1,0 +1,14 @@
+.btn {
+	background: $red;
+	padding: 8px 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 0.8125rem;
+
+	&_background_black {
+		background: $black;
+	}
+}
+
