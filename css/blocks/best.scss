@@ -32,3 +32,11 @@
 .best__icon {
 	display: inline-block;
 }
+
+@each $icon in (meat, hand, natural) {
+	.best__img-#{$icon} {
+		background: url('../img/icons/#{$icon}.svg') center center no-repeat;
+		height: 83px;
+	}	
+}
+
