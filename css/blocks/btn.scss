@@ -6,9 +6,11 @@
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 0.8125rem;
+	border-style: none;
 
-	&_background_black {
+
+	&_background-black {
 		background: $black;
-	}
+	}  
 }
 
