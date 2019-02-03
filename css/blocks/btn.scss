@@ -1,16 +1,24 @@
 .btn {
 	background: $red;
-	padding: 8px 15px;
-	border-radius: 5px;
+	padding: rem(8px) rem(15px);
+	border-radius: rem(5px);
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 0.8125rem;
 	border-style: none;
 
+	&:hover {
+			cursor: pointer;
+		}
 
 	&_background-black {
 		background: $black;
-	}  
+
+		&:hover {
+			background: #0f0f0f;
+
+		}
+	}
 }
 

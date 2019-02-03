@@ -1,4 +1,14 @@
-$black: #2f3234;
+html {
+	font-size: rem(16px);
+
+	@include tablets() {
+		font-size: 14px;
+	}
+
+	@include phones() {
+		font-size: 13px;
+	}
+}
 
 html, 
 body {
@@ -6,7 +16,7 @@ body {
 }
 
 body {
-	font-size: 16px;
+	font-size: rem(16px);
 	line-height: 1.42;
 	position: relative;
 	@include ubuntu();
@@ -14,20 +24,25 @@ body {
 }
 
 .wrapper {
-	overflow: hidden;
-	min-height: 100%;
+	position: relative;
 	width: 100%;
-	min-width: 940px;
+	//min-width: rem(940px);
+	min-height: 100%;
+	//overflow: hidden;
 }
 
 .container {
-	max-width: 940px;
+	max-width: rem(940px);
+	width: 95%;
 	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .section {
 	height: 100vh;
-	min-height: 650px;
+	min-height: rem(650px);
 
 	&_centered {
 		.title {
