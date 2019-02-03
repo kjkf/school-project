@@ -1,0 +1,76 @@
+.menus__accordeon {
+	display: flex;
+	height: 100%;
+
+}
+
+.menus__item-wrap {
+	display: flex;
+	height: 100%;
+	&_active {
+		.menus__item-title{
+    		color: $yellow;
+    	}
+		.menus__item-text-wrap {
+			width: rem(540px);
+		}
+}
+}
+
+@each $val in (meat, vegan, diet) {
+	.menu-#{$val} {
+		background: url(../img/menu-#{$val}.jpg) center center / cover no-repeat;
+		/* idth: 33.33%; */
+	}
+}
+
+.title_size_l {
+	width: rem(300px);
+}
+
+.menus__item-title {
+	/* -webkit-transform: rotate(90deg);  */
+	@include gagalin();
+	transform: rotate(270deg);
+    font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    transform-origin: 0 0;
+
+
+}
+
+.menus__item {
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: rem(0px) rem(10px);
+    width: rem(80px);
+
+    &:hover {
+    	cursor: pointer;
+    	.menus__item-title{
+    		color: $yellow;
+    	}
+    	
+    }
+
+
+}
+
+
+
+.menus__item-text-wrap {
+	width: rem(0px);
+	overflow: hidden;
+	background: $black;
+    opacity: .93;
+}
+
+.menus__item-text {
+	padding: rem(60px) rem(35px);
+    color: #fff;
+    @include ubuntu();
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
