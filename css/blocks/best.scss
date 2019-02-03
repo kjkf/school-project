@@ -8,7 +8,7 @@
 
 .best__item {
 	flex: 1;
-	margin-right: 15px;
+	margin-right: rem(15px);
 	text-align: center;
 	
 	&:last-child {
@@ -19,24 +19,19 @@
 .best__desc-title {
 	font-family: 'Lifehack-Medium';
 	font-size: 1.5rem;
-	margin-top: 25px;
+	margin-top: rem(25px);
 }
 
 .best__desc-content {
 	font-size: 0.8775rem;
 	@include ubuntu();
 	line-height: 1.7;
-    margin-top: 10px;
+    margin-top: rem(10px);
 }
 
 .best__icon {
 	display: inline-block;
 }
 
-@each $icon in (meat, hand, natural) {
-	.best__img-#{$icon} {
-		background: url('../img/icons/#{$icon}.svg') center center no-repeat;
-		height: 83px;
-	}	
-}
+
 

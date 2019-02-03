@@ -33,7 +33,7 @@
 	right: 0;
 	bottom: 0;
 	background: rgba(#000, .5);
-	padding: 20px;
+	padding: rem(20px);
 	color: #fff;
 	opacity: 0;
 	transition: opacity 0.3s;
@@ -51,5 +51,11 @@
 }
 
 .reviews__btn {
-	margin-top: 20px;
+	margin-top: rem(20px);
+
+
+}
+
+btn_hover {
+	background: #0f0f0f;
 }

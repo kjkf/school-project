@@ -1,0 +1,17 @@
+.menus {
+	background: url('../img/menu-bg.jpg') center center / cover no-repeat;
+	position: relative;
+}
+.menus__accordeon-wrap {
+	position: absolute;
+	/* width: rem(240px); */
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(#000, .5);;
+}
+
+.menus-title {
+	padding: rem(95px) rem(14px);
+}

@@ -3,10 +3,14 @@
 	color: $yellow;
 	font-family: 'Gagalin-Regular';
 	line-height: 1.1;
-	margin-bottom: 45px;
+	margin-bottom: rem(45px);
 
 	&_color-black {
 		color: $black;
+	}
+
+	&_color-white {
+		color: #fff;
 	}
 }
 

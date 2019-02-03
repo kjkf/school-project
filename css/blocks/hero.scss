@@ -10,11 +10,11 @@
 }
 
 .hero__order-btn {
-	margin-left: 15px;
+	margin-left: rem(15px);
 }
 
 .hero__header {
-	margin-top: 10px;
+	margin-top: rem(10px);
 }
 
 .hero__content {
@@ -24,7 +24,7 @@
 }
 
 .hero_content-img {
-	margin-left: 18px;
+	margin-left: rem(18px);
 }
 
 
@@ -36,19 +36,19 @@
 }
 
 .hero__content-text {
-	margin-top: 59px;
-    margin-left: 10px;
+	margin-top: rem(59px);
+    margin-left: rem(10px);
 }
 
 .arrow-down {
 	display: block;
-	width: 29px;
-	height: 15px;
+	width: rem(29px);
+	height: rem(15px);
 	background: url(../img/icons/arrow-scroll.svg) no-repeat;
 }
 
 .hero__arrow-down {
 	position: absolute;
 	left: 49%;
-	bottom: 22px;
+	bottom: rem(22px);
 }
