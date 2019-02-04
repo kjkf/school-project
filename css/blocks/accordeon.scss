@@ -1,3 +1,9 @@
+.accordeon__list {
+	@include tablets() {
+		text-align: center;
+	}
+}
+
 .accordeon__item {
 	display: block;
 	color: #fff;
@@ -8,7 +14,8 @@
 }
 
 .accordeon__item-name {
-	
+	text-decoration: none;
+	color: #fff;
 	@include gagalin();
 	padding-left: rem(20px);
 	position: relative;
@@ -22,7 +29,7 @@
 		border-right: rem(4px) solid transparent;
 		border-top: rem(6px) solid $yellow;
 		position: absolute;
-		top: rem(10px);
+		top: rem(5px);
 		left: rem(0px);
 	}
 
@@ -48,7 +55,7 @@
 			border-bottom: rem(6px) solid $yellow;
 			border-top: 0;
 			position: absolute;
-			top: rem(10px);
+			top: rem(5px);
 			left: rem(0px);
 		}
 	}
@@ -56,6 +63,10 @@
 
 .accordeon__item__wrap {
 	display: none;
+
+	@include tablets() {
+		flex-direction: column;
+	}
 }
 .accordeon__item-img {
 	border-radius: 50%;
@@ -69,7 +80,7 @@
 
 .accordeon__item__desc {
 	padding: rem(10px) rem(0px) 0 rem(16px);
-	width: rem(225px);
+	//width: rem(225px);
 }
 
 .accordeon__item__desc-staff {

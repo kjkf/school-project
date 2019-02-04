@@ -5,6 +5,14 @@
 .form__column-wrap {
 	display: flex;
 	justify-content: space-between;
+
+	@include tablets {
+		flex-direction: column;	
+		padding: 0 15%;
+	}
+	@include phones {
+		padding: 0 5%;
+	}
 }
 
 .form__column {
@@ -14,11 +22,19 @@
 	&:first-child {
 		margin-left: 0;
 	}
+
+	@include tablets {
+		margin-left: 0;
+	}
 }
 
 .form__row {
 	display: flex;
 	margin-bottom: rem(14px);
+
+	@include phones {
+		justify-content: center;
+	}
 }
 
 .form__block {
@@ -27,6 +43,10 @@
 
 	&:last-child {
 		margin-right: 0;
+	}
+
+	@include phones {
+		justify-content: center;
 	}
 }
 

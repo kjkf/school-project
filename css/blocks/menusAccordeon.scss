@@ -12,7 +12,8 @@
     		color: $yellow;
     	}
 		.menus__item-text-wrap {
-			width: rem(540px);
+			width: 95%;
+			max-width: rem(540px);
 		}
 }
 }
