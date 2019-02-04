@@ -1,6 +1,10 @@
 html {
 	font-size: rem(16px);
 
+	@include anotherBreakpoint() {
+		font-size: 14px;
+	}
+
 	@include tablets() {
 		font-size: 14px;
 	}
@@ -26,16 +30,17 @@ body {
 .wrapper {
 	position: relative;
 	width: 100%;
-	//min-width: rem(940px);
+	//max-width: rem(940px);
 	min-height: 100%;
-	//overflow: hidden;
+	overflow: hidden;
 }
 
 .container {
 	max-width: rem(940px);
 	width: 95%;
+	height: 100%;
 	margin: 0 auto;
-	position: relative;
+	//position: relative;
 	display: flex;
 	flex-direction: column;
 }

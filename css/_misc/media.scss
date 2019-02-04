@@ -13,3 +13,9 @@
 		@content;
 	}
 }
+
+@mixin anotherBreakpoint() {
+	@media screen and (max-width: $anotherBreakpoint) {
+		@content;
+	}
+}
