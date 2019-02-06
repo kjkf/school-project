@@ -19,7 +19,11 @@
 	@include gagalin();
 	padding-left: rem(20px);
 	position: relative;
-	width: 100%;
+	//width: 100%;
+    background: transparent;
+    border-style: none;
+    outline: none;
+
 
 	&:before {
 		content: "";
@@ -35,6 +39,7 @@
 
 	&:hover {
 		color: $yellow;
+		cursor: pointer;
 
 	}
 }
@@ -72,6 +77,7 @@
 	border-radius: 50%;
     width: rem(100px);
     height: rem(100px);
+    object-fit: cover;
 }
 
 .accordeon__img {

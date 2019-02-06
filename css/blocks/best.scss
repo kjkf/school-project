@@ -68,5 +68,8 @@ min-width: 25%;
 
 .best__title {
 	margin-bottom: rem(5px);
+	@include phones {
+		margin-bottom: rem(35px);
+	}
 }
 

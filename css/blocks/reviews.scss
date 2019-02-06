@@ -74,6 +74,11 @@
 	font-size: 0.875rem;
 	line-height: 1.7;
 
+	@include tablets {
+		max-height: 65px;
+    	overflow: hidden;
+	}
+
 	@include phones {
 		display: none;
 	}
