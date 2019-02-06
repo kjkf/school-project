@@ -36,16 +36,27 @@
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
     font-size: 2.5rem;
     color: #fff;
-    transform-origin: 0 0;
+    transform-origin: rem(35px) rem(35px);
+    background: transparent;
+    border-style: none;
+    outline: none;
+    min-width: rem(280px);
+    width: 98vh;
+    text-align: left;
+    padding-top: rem(10px);
+    padding-bottom: rem(20px);
+    padding-left: rem(45px);
 
-
+    &:hover {
+    	cursor: pointer;
+    }
 }
 
 .menus__item {
 	display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    padding: rem(0px) rem(10px);
+    //padding: rem(0px) rem(10px);
     width: rem(80px);
 
     &:hover {
