@@ -61,6 +61,7 @@
 .menu__item {
 	display: flex;
 	align-items: center;
+	@include ubuntu(medium);
 
 	&:last-child {
 		&:after {
@@ -86,5 +87,8 @@
 .menu__link {
 	color: #fff;
 	text-decoration: none;
-
+	
+	&:hover {
+		color: $red;
+	}
 }

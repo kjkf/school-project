@@ -79,15 +79,8 @@
     }
 }
 
-.arrow-down {
-	display: block;
-	width: rem(29px);
-	height: rem(15px);
-	background: url(../img/icons/arrow-scroll.svg) no-repeat;
-}
-
 .hero__arrow-down {
-	position: absolute;
+	//position: absolute;
 	left: 48%;
 	bottom: rem(41px);
 }

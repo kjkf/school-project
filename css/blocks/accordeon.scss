@@ -1,6 +1,7 @@
 .accordeon__list {
 	@include tablets() {
 		text-align: center;
+		margin: 0 5%;
 	}
 }
 
@@ -44,30 +45,32 @@
 	}
 }
 
-.accordeon__item_active {
-	.accordeon__item__wrap {
-		display: flex;
-	}
-
-	.accordeon__item-name {
-		color: $yellow;
-		&:before {
-			content: "";
-			width: 0;
-			height: 0;
-			border-left: rem(4px) solid transparent;
-			border-right: rem(4px) solid transparent;
-			border-bottom: rem(6px) solid $yellow;
-			border-top: 0;
-			position: absolute;
-			top: rem(5px);
-			left: rem(0px);
+.accordeon__item {
+	&.active {
+		.accordeon__item-name {
+			color: $yellow;
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-left: rem(4px) solid transparent;
+				border-right: rem(4px) solid transparent; 
+				border-bottom: rem(6px) solid $yellow;
+				border-top: 0;
+				position: absolute;
+				top: rem(5px);
+				left: rem(0px);
+			}
 		}
 	}
+	
 }
 
 .accordeon__item__wrap {
-	display: none;
+	display: flex;
+	height: 0;
+	overflow: hidden;
+	transition: height .3s;
 
 	@include tablets() {
 		flex-direction: column;

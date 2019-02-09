@@ -1396,7 +1396,11 @@
 </g>
 	</symbol>
 
+	
+
 	<use x="0" y="0" width="100" height="80"  xlink:href="#hand-icon" /> 
 	<use x="0" y="80" width="100" height="80"  xlink:href="#meat-icon" /> 
 	<use x="0" y="160" width="100" height="80"  xlink:href="#natural-icon" /> 
+	<use x="0" y="240" width="100" height="80"  xlink:href="#burger" /> 
+	<use x="0" y="300" width="100" height="80"  xlink:href="#kkal" /> 
 </svg>
