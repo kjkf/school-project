@@ -47,9 +47,16 @@
 	background: $black;
 	text-transform: uppercase;
 
+	font-size: rem(24px);
+	line-height: rem(40px);
+
 	&_visible {
 		display: block;
 	}
+}
+
+.hamburger__menu-content {
+	margin-top: rem(200px);
 }
 
 .hamburger__menu-logo {
@@ -64,12 +71,12 @@
 	position: relative;
 	justify-content: center;
 	min-width: rem(140px);
-	margin-bottom: rem(20px);
+	margin-bottom: rem(30px);
 
 	&:after {
 		position: absolute;
-	    left: 41%;
-	    top: rem(27px);
+	    left: 45%;
+	    top: rem(50px);
 	}
 
 	
