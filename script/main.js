@@ -97,8 +97,6 @@ function openAccoMenu(item, wrap, type) {
 }
 
 function closeAccoMenu(item, wrap, type) {
-	console.log(item);
-	console.log(wrap);
 	wrap.style[type] = 0;
 	item.classList.remove("active");	 
 }
@@ -118,7 +116,7 @@ let currentRight = 0;
 
 rightBtn.addEventListener('click', e => {
 	e.preventDefault();
-	//console.log("step = " + step + "	currentRight = " + currentRight);
+	console.log("step = " + step + "	currentRight = " + currentRight);
 	if (currentRight < maxRight) {
 		currentRight += step;
 		items.style.right = `${currentRight}px`;
@@ -130,7 +128,7 @@ rightBtn.addEventListener('click', e => {
 
 leftBtn.addEventListener('click', e => {
 	e.preventDefault();
-	//console.log("step = " + step + "	currentRight = " + currentRight);
+	console.log("step = " + step + "	currentRight = " + currentRight);
 	if (currentRight > minRight) {
 		currentRight -= step;
 		items.style.right = `${currentRight}px`;

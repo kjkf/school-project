@@ -50,6 +50,10 @@
     &:hover {
     	cursor: pointer;
     }
+
+    @include phones {
+        font-size: 2rem;
+    }
 }
 
 .menus__item {
@@ -67,7 +71,9 @@
     	
     }
 
-
+    @include phones {
+        width: rem(64px);
+    }
 }
 
 
@@ -85,4 +91,8 @@
     @include ubuntu();
     font-size: 0.875rem;
     line-height: 1.6;
+
+    @include phones {
+        padding: rem(15px) rem(20px);
+    }
 }
