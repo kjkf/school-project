@@ -12,13 +12,14 @@ $anotherBreakpoint: 1000px;
 @import "_misc/fonts.scss";
 @import "_misc/layout.scss";
 
-
 @import "./blocks/header.scss";
 @import "./blocks/hamburgerMenu.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/arrows.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/title.scss";
 @import "./blocks/best.scss";
+@import "./blocks/burgers.scss";
 @import "./blocks/team.scss";
 @import "./blocks/accordeon.scss";
 @import "./blocks/menus.scss";
@@ -28,3 +29,4 @@ $anotherBreakpoint: 1000px;
 @import "./blocks/order.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/fixedMenu.scss";
+@import "./blocks/tabs.scss";
