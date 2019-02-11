@@ -64,18 +64,23 @@
 		}
 	}
 	
-}
+} 
 
 .accordeon__item__wrap {
-	display: flex;
+	display: block;
 	height: 0;
 	overflow: hidden;
 	transition: height .3s;
+}
 
+.accordeon__item__content {
+	display: flex;
+	flex-direction: row;
 	@include tablets() {
 		flex-direction: column;
 	}
 }
+
 .accordeon__item-img {
 	border-radius: 50%;
     width: rem(100px);
@@ -88,7 +93,7 @@
 }
 
 .accordeon__item__desc {
-	padding: rem(10px) rem(0px) 0 rem(16px);
+	padding: rem(10px) rem(16px) 0 rem(16px);
 	//width: rem(225px);
 }
 
