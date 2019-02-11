@@ -39,6 +39,14 @@ function hamburgMenuClose() {
 	//
 }
 
+const hamburgMenuItems = hamburgMenu.querySelectorAll(".menu__item");
+for (const item of  hamburgMenuItems) {
+	item.addEventListener("click", e => {
+		hamburgMenuClose();
+	});
+}
+
+
 // ************* T E A M    A C C O R D E O N
 const acco_list = document.querySelector(".accordeon__list");
 const acco_items = acco_list.querySelectorAll(".accordeon__item");
