@@ -1,0 +1,62 @@
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	//opacity: 0;
+}
+
+.overlay {
+	background: rgba(00, 00, 00, .7);
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup__container {
+	width: 45%;
+	position: relative;
+}
+
+.modal {
+	padding: rem(20px) rem(16px);
+	background: #fff;
+	border-radius: rem(5px);
+
+	@include ubuntu();
+	font-size: rem(14px);
+	line-height: rem(24px);
+	color: $black;
+}
+
+.closeBtn {
+	position: absolute;
+    top: rem(15px);
+    right: rem(15px);
+}
+//*************** R E V I E W   M O D A L s 
+
+
+
+.review__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: rem(16px);
+
+	.review__title {
+		margin: 0;
+		line-height: 2;
+	}
+}
+
+
+
+
+//*******************
+.response-server {
+	text-align: center;
+}

@@ -1,0 +1,37 @@
+.cross {
+	width: rem(20px);
+	height: rem(20px);
+	position: relative;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+/*background: #ccc; /**/
+
+}
+
+.cross:before, .cross:after {
+	content: "";
+	position: absolute;
+	z-index: 100;
+	background: #c1c2c2;
+}
+
+.cross:before {
+	left: 50%;
+	width: 3px;
+	margin-left: -5%;
+	height: 100%;
+	//background: green;
+}
+
+.cross:after {
+	top: 50%;
+	height: 3px;
+	margin-top: -5%;
+	width: 100%;
+  //background: red;
+}
+
+.cross-red:before, .cross-red:after {
+	background: $red;
+}
