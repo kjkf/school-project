@@ -3,6 +3,7 @@
 }
 
 .form__column-wrap {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 
@@ -61,17 +62,27 @@
 	border-radius: rem(5px);
 	background: #fff;
 	border: none;
+	border: 2px solid transparent;
 	width: 100%;
-	padding: rem(8px) rem(10px);
+	padding: rem(7px) rem(9px);
+
+	&.has-error {
+		border: 2px solid red;
+	}
 }
 
 .form__block-textarea {
 	border-radius: rem(5px);
 	background: #fff;
 	border: none;
+	border: 2px solid transparent;
 	width: 100%;
 	height: 7rem;
 	padding: rem(8px) rem(10px);
+
+	&.has-error {
+		border: 2px solid red;
+	}
 }
 
 .form__block-radio {
