@@ -253,8 +253,8 @@ function createErrorMsgBox(field) {
 }
 
 
-
-orderBtn.addEventListener('click', (e) => {
+//orderBtn.addEventListener('click', (e) => {
+orderForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 	
 	if (validateForm(orderForm)) {
